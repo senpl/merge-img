@@ -1,6 +1,6 @@
 {
-  "name": "merge-img",
-  "version": "2.1.2up",
+  "name": "merge-img-vwv",
+  "version": "2.1.4up",
   "description": "Merge multiple images into a single image",
   "author": "Plusb Preco <plusb21@gmail.com>",
   "main": "lib/index.js",
@@ -9,7 +9,8 @@
     "prebuild": "npm run clean",
     "test": "eslint . && jest",
     "build": "babel --out-dir lib src",
-    "clean": "rimraf lib"
+    "clean": "rimraf lib",
+    "rimraf": "./node_modules/rimraf/bin.js"
   },
   "engines": {
     "node": ">= 4"
@@ -32,18 +33,20 @@
     "merge"
   ],
   "dependencies": {
+    "babel-loader": "^8.2.2",
     "is-plain-obj": "^1.1.0",
-    "jimp": "0.2.27"
+    "jimp": "0.16.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-jest": "^20.0.3",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-env": "^1.6.0",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-stage-1": "^6.24.1",
     "eslint": "^4.5.0",
-    "eslint-config-prev": "^6.0.0",
+    "eslint-config-prev": "^7.0.0",
     "jest": "^20.0.4",
-    "rimraf": "^2.6.1"
+    "rimraf": "^3.0.2"
   }
 }
