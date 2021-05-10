@@ -1,4 +1,4 @@
-# merge-img
+# merge-img-vwv
 
 [![Code Style Prev](https://img.shields.io/badge/code%20style-prev-32c8fc.svg)](https://github.com/preco21/eslint-config-prev)
 [![NPM Version](https://img.shields.io/npm/v/merge-img.svg)](https://www.npmjs.com/package/merge-img)
@@ -7,7 +7,7 @@
 
 > Merge multiple images into a single image
 
-`merge-img` merges given images into a single image in right order. This will be helpful in a situation when you have to generate a preview of multiple images into a single image. This module is based on [`Jimp`][jimp] for image processing.
+`merge-img-vwv` is version of merge-img version without ver merges given images into a single image in right order. This will be helpful in a situation when you have to generate a preview of multiple images into a single image. This module is based on [`Jimp`][jimp] for image processing.
 
 ![figure](https://rawgit.com/preco21/merge-img/master/media/figure.png)
 Image credit: https://www.pexels.com/
@@ -15,13 +15,13 @@ Image credit: https://www.pexels.com/
 ## Install
 
 ```bash
-$ npm install merge-img
+$ npm install merge-img-vwv
 ```
 
 ## Usage
 
 ```javascript
-import mergeImg from 'merge-img';
+const mergeImg = require("merge-img-vwv");
 
 mergeImg(['image-1.png', 'image-2.jpg'])
   .then((img) => {
